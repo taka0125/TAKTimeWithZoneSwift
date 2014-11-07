@@ -1,0 +1,13 @@
+let nowInGMT = TimeWithZone.nowInGMT()
+nowInGMT.strftime()
+nowInGMT.beginningOfDay().strftime()
+nowInGMT.endOfDay().strftime()
+nowInGMT.yearsAgo(1).beginningOfDay().strftime()
+nowInGMT.yearsAgo(1).endOfDay().strftime()
+
+let nowInJST = nowInGMT.inTimeZone(NSTimeZone.JST())
+nowInJST.strftime()
+nowInJST.beginningOfDay().strftime()
+nowInJST.endOfDay().strftime()
+nowInJST.yearsAgo(1).beginningOfDay().strftime()
+nowInJST.yearsAgo(1).endOfDay().strftime()
